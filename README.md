@@ -15,6 +15,7 @@ Install `stylelint-config-react-native-styled-components` (and `stylelint` + `st
 yarn add \
   stylelint \
   stylelint-react-native \
+  stylelint-processor-styled-components \
   stylelint-config-react-native-styled-components --dev
 ```
 
@@ -24,6 +25,7 @@ or
 npm install \
   stylelint \
   stylelint-react-native \
+  stylelint-processor-styled-components \
   stylelint-config-react-native-styled-components --save-dev
 ```
 
