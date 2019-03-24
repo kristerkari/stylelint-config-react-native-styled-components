@@ -2,6 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-react-native-styled-components.svg)](https://www.npmjs.org/package/stylelint-config-react-native-styled-components)
 [![Build Status](https://travis-ci.org/kristerkari/stylelint-config-react-native-styled-components.svg?branch=master)](https://travis-ci.org/kristerkari/stylelint-config-react-native-styled-components)
+[![Build status](https://ci.appveyor.com/api/projects/status/jlsivvsllw1sfwrx/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/stylelint-config-react-native-styled-components/branch/master)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 
 Shareable stylelint config for [styled components](https://www.styled-components.com/) when using React Native.
