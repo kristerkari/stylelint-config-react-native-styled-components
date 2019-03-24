@@ -1,0 +1,24 @@
+language: node_js
+sudo: false
+git:
+  depth: 1
+cache:
+  directories:
+    - $HOME/.npm
+    - node_modules
+matrix:
+  include:
+    - node_js: "11"
+      script: npm test
+      env: CI=test 11
+    - node_js: "10"
+      script: npm test
+      env: CI=test 10
+    - node_js: "8"
+      script: npm test
+      env: CI=test 8
+    - node_js: "6"
+      script: npm test
+      env: CI=tests 6
+before_install:
+  - npm install -g npm@latest
