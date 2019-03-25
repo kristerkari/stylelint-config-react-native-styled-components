@@ -7,6 +7,8 @@
 
 Shareable stylelint config for [styled components](https://www.styled-components.com/) when using React Native.
 
+<img src="screenshots/linting.gif" width="742">
+
 ## Installation and usage
 
 Install `stylelint-config-react-native-styled-components` (and `stylelint` + `stylelint-react-native`):
