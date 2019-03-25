@@ -9,7 +9,7 @@ module.exports = {
     "at-rule-whitelist": [
       [],
       {
-        severity: "warning",
+        severity: "error",
         message:
           "this at-rule is not supported when using styled-components with React Native."
       }
@@ -37,7 +37,7 @@ module.exports = {
         "matrix"
       ],
       {
-        severity: "warning",
+        severity: "error",
         message:
           "this function is not supported when using styled-components with React Native."
       }
@@ -45,7 +45,7 @@ module.exports = {
     "unit-whitelist": [
       ["px", "deg", "%"],
       {
-        severity: "warning",
+        severity: "error",
         message:
           "this unit is not supported when using styled-components with React Native."
       }
@@ -53,7 +53,7 @@ module.exports = {
     "selector-pseudo-class-whitelist": [
       [],
       {
-        severity: "warning",
+        severity: "error",
         message:
           "pseudo class selectors are not supported when using styled-components with React Native."
       }
@@ -63,7 +63,7 @@ module.exports = {
     "selector-max-class": [
       1,
       {
-        severity: "warning",
+        severity: "error",
         message:
           "class selectors are not supported when using styled-components with React Native."
       }
@@ -71,7 +71,7 @@ module.exports = {
     "selector-max-universal": [
       0,
       {
-        severity: "warning",
+        severity: "error",
         message:
           "universal selectors are not supported when using styled-components with React Native."
       }
@@ -79,7 +79,7 @@ module.exports = {
     "selector-max-attribute": [
       0,
       {
-        severity: "warning",
+        severity: "error",
         message:
           "attribute selectors are not supported when using styled-components with React Native."
       }
@@ -87,7 +87,7 @@ module.exports = {
     "selector-max-type": [
       0,
       {
-        severity: "warning",
+        severity: "error",
         message:
           "type selectors are not supported when using styled-components with React Native."
       }
@@ -95,7 +95,7 @@ module.exports = {
     "selector-max-id": [
       0,
       {
-        severity: "warning",
+        severity: "error",
         message:
           "id selectors are not supported when using styled-components with React Native."
       }
