@@ -6,7 +6,7 @@ describe("valid cases", () => {
 
     const code = `
     import styled from "styled-components";
-  
+
     const Test = styled.View\`
       padding: 15px 2px 15px 3px;
       flex-direction: row;
@@ -73,7 +73,7 @@ describe("valid cases", () => {
 
     const code = `
     import styled from "styled-components";
-  
+
     const Test = styled.View\`
       flex: 1;
       /* word-wrap: break-word; */
@@ -101,7 +101,7 @@ describe("valid cases", () => {
 
     const code = `
     import styled from "styled-components";
-  
+
     const Test = styled.Image\`
       width: 20;
       height: 20;
@@ -132,7 +132,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         background-color: rgb(255, 0, 153);
       \`;
@@ -159,7 +159,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         background-color: rgba(51, 170, 51, .1);
       \`;
@@ -186,7 +186,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         background-color: hsl(270,60%,70%);
       \`;
@@ -213,7 +213,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         background-color: hsla(240, 100%, 50%, .05);
       \`;
@@ -242,7 +242,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: rotate(90deg);
       \`;
@@ -269,7 +269,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: rotateX(90deg);
       \`;
@@ -296,7 +296,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: rotateY(90deg);
       \`;
@@ -323,7 +323,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: rotateZ(90deg);
       \`;
@@ -350,7 +350,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: translate(0, 0);
       \`;
@@ -377,7 +377,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: translateY(0);
       \`;
@@ -404,7 +404,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: translateX(0);
       \`;
@@ -431,7 +431,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: scale(1,1);
       \`;
@@ -458,7 +458,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: scaleX(1);
       \`;
@@ -485,7 +485,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: scaleY(1);
       \`;
@@ -512,7 +512,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: skew(10deg, 10deg);
       \`;
@@ -539,7 +539,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: skewX(10deg);
       \`;
@@ -566,7 +566,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: skewY(10deg);
       \`;
@@ -593,7 +593,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: perspective(10px);
       \`;
@@ -620,7 +620,7 @@ describe("valid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
       \`;
@@ -657,19 +657,19 @@ describe("invalid cases", () => {
       &:hover {
         color: red;
       }
-  
+
       & ~ & {
         background: tomato;
       }
-  
+
       & + & {
         background: lime;
       }
-  
+
       &.something {
         background: orange;
       }
-  
+
       .something-else & {
         border: 1px solid;
       }
@@ -688,7 +688,7 @@ describe("invalid cases", () => {
       .then(output => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(1);
-        expect(output.errored).toBe(false);
+        expect(output.errored).toBe(true);
         expect(warnings[0].text).toBe(
           "pseudo class selectors are not supported when using styled-components with React Native."
         );
@@ -728,7 +728,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         -webkit-transform: scale(1);
       \`;
@@ -761,7 +761,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         word-wrap: break-word;
       \`;
@@ -793,10 +793,10 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        #test { 
-          flex: 1; 
+        #test {
+          flex: 1;
         }
       \`;
       `;
@@ -813,7 +813,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "id selectors are not supported when using styled-components with React Native."
           );
@@ -825,10 +825,10 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        input { 
-          flex: 1; 
+        input {
+          flex: 1;
         }
       \`;
       `;
@@ -845,7 +845,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "type selectors are not supported when using styled-components with React Native."
           );
@@ -857,8 +857,8 @@ describe("invalid cases", () => {
 
       const code = `
       .selector1 {
-        a.link { 
-          flex: 1; 
+        a.link {
+          flex: 1;
         }
       }
       `;
@@ -874,7 +874,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "class selectors are not supported when using styled-components with React Native."
           );
@@ -889,10 +889,10 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        * { 
-          flex: 1; 
+        * {
+          flex: 1;
         }
       \`;
       `;
@@ -909,7 +909,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "universal selectors are not supported when using styled-components with React Native."
           );
@@ -921,10 +921,10 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        [type='text'] { 
-          flex: 1; 
+        [type='text'] {
+          flex: 1;
         }
       \`;
       `;
@@ -941,7 +941,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "attribute selectors are not supported when using styled-components with React Native."
           );
@@ -953,10 +953,10 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        :before { 
-          flex: 1; 
+        :before {
+          flex: 1;
         }
       \`;
       `;
@@ -973,7 +973,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "pseudo class selectors are not supported when using styled-components with React Native."
           );
@@ -985,9 +985,9 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        :root { 
+        :root {
           --my-color: red;
         }
       \`;
@@ -1005,7 +1005,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "pseudo class selectors are not supported when using styled-components with React Native."
           );
@@ -1019,7 +1019,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         color: var(--my-color);
       \`;
@@ -1037,7 +1037,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this function is not supported when using styled-components with React Native."
           );
@@ -1049,7 +1049,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         width: calc(100% - 10px);
       \`;
@@ -1067,7 +1067,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this function is not supported when using styled-components with React Native."
           );
@@ -1080,7 +1080,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           background: linear-gradient(to right, purple, yellow);
         \`;
@@ -1098,7 +1098,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1110,7 +1110,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           background: radial-gradient(yellow, red);
         \`;
@@ -1128,7 +1128,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1140,7 +1140,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           background: repeating-linear-gradient(gold 15%, orange 30%);
         \`;
@@ -1158,7 +1158,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1170,7 +1170,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           background: repeating-radial-gradient(yellow 20%, red 40%);
         \`;
@@ -1188,7 +1188,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1202,7 +1202,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: translateZ(0)
         \`;
@@ -1220,7 +1220,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1232,7 +1232,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: translate3d(0, 0, 0);
         \`;
@@ -1250,7 +1250,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1262,7 +1262,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: scale3d(1,1,1);
         \`;
@@ -1280,7 +1280,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1292,7 +1292,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: rotate3d(1, 2.0, 3.0, 10deg);
         \`;
@@ -1310,7 +1310,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1322,7 +1322,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: scaleZ(1);
         \`;
@@ -1340,7 +1340,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1352,7 +1352,7 @@ describe("invalid cases", () => {
 
         const code = `
         import styled from "styled-components";
-  
+
         const Test = styled.View\`
           transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
         \`;
@@ -1370,7 +1370,7 @@ describe("invalid cases", () => {
           .then(output => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
-            expect(output.errored).toBe(false);
+            expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
               "this function is not supported when using styled-components with React Native."
             );
@@ -1385,15 +1385,15 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
-        @keyframes() { 
-          0% { 
-            color: blue; 
-          } 
-          100% { 
-            color: red; 
-          } 
+        @keyframes() {
+          0% {
+            color: blue;
+          }
+          100% {
+            color: red;
+          }
         }
       \`;
       `;
@@ -1410,7 +1410,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
@@ -1422,7 +1422,7 @@ describe("invalid cases", () => {
 
       const code = `
       .selector1 {
-        @media (max-width: 900px) { 
+        @media (max-width: 900px) {
           .foo {
             color: blue;
           }
@@ -1441,7 +1441,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
@@ -1475,7 +1475,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
@@ -1490,7 +1490,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         @charset "utf-8";
       \`;
@@ -1508,7 +1508,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
@@ -1520,7 +1520,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         @import 'custom.css';
       \`;
@@ -1538,7 +1538,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
@@ -1550,7 +1550,7 @@ describe("invalid cases", () => {
 
       const code = `
       import styled from "styled-components";
-  
+
       const Test = styled.View\`
         @font-face {
           font-family: MyHelvetica;
@@ -1570,7 +1570,7 @@ describe("invalid cases", () => {
         .then(output => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
-          expect(output.errored).toBe(false);
+          expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
             "this at-rule is not supported when using styled-components with React Native."
           );
