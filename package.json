@@ -30,6 +30,7 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0",
     "stylelint": "^10.0.1",
+    "stylelint-processor-styled-components": "^1.7.0",
     "stylelint-react-native": "^2.1.0"
   },
   "peerDependencies": {

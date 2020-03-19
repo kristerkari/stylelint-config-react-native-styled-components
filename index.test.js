@@ -785,6 +785,37 @@ describe("invalid cases", () => {
           );
         });
     });
+
+    it("ignores styled-components mixins", () => {
+      expect.assertions(2);
+
+      const code = `
+      import styled from "styled-components";
+
+      const Test = styled.View\`
+        $\{borderRadius};
+        $\{space};
+        $\{width};
+        $\{height};
+      \`;
+      `;
+
+      return stylelint
+        .lint({
+          code,
+          syntax: "css-in-js",
+          formatter: "string",
+          processors: ["stylelint-processor-styled-components"],
+          config: {
+            extends: "./index.js"
+          }
+        })
+        .then(output => {
+          const { warnings } = output.results[0];
+          expect(warnings.length).toBe(0);
+          expect(output.errored).toBe(false);
+        });
+    });
   });
 
   describe("selectors", () => {
