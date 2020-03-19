@@ -8,14 +8,11 @@ cache:
     - node_modules
 matrix:
   include:
-    - node_js: "11"
+    - node_js: "12"
       script: npm test
-      env: CI=test 11
+      env: CI=test 12
     - node_js: "10"
       script: npm test
       env: CI=test 10
-    - node_js: "8"
-      script: npm test
-      env: CI=test 8
 before_install:
   - npm install -g npm@latest
