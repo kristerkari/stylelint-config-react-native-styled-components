@@ -6,7 +6,7 @@ module.exports = {
     "property-no-vendor-prefix": true,
     "no-empty-source": null,
     "no-missing-end-of-source-newline": null,
-    "at-rule-whitelist": [
+    "at-rule-allowed-list": [
       [],
       {
         severity: "error",
@@ -14,7 +14,7 @@ module.exports = {
           "this at-rule is not supported when using styled-components with React Native."
       }
     ],
-    "function-whitelist": [
+    "function-allowed-list": [
       [
         "rgb",
         "rgba",
@@ -42,7 +42,7 @@ module.exports = {
           "this function is not supported when using styled-components with React Native."
       }
     ],
-    "unit-whitelist": [
+    "unit-allowed-list": [
       ["px", "deg", "%"],
       {
         severity: "error",
@@ -50,7 +50,7 @@ module.exports = {
           "this unit is not supported when using styled-components with React Native."
       }
     ],
-    "selector-pseudo-class-whitelist": [
+    "selector-pseudo-class-allowed-list": [
       [],
       {
         severity: "error",
