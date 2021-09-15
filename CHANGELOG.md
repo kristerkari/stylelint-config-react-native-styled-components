@@ -1,3 +1,7 @@
+## v0.4.0
+
+- Changed: handle deprecations from stylelint versions 13.7.0 or newer.
+
 ## v0.3.0
 
 - Added: support for stylelint versions 11, 12 and 13.
