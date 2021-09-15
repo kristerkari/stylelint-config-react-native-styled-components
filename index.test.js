@@ -642,6 +642,34 @@ describe("valid cases", () => {
         });
     });
   });
+
+  it("does not warn for rule name deprecations", () => {
+    expect.assertions(3);
+
+    const code = `
+    import styled from "styled-components";
+
+    const Test = styled.View\`
+      padding: 15px 2px 15px 3px;
+    \`;
+    `;
+
+    return stylelint
+      .lint({
+        code,
+        syntax: "css-in-js",
+        formatter: "string",
+        config: {
+          extends: "./index.js"
+        }
+      })
+      .then(output => {
+        const { warnings } = output.results[0];
+        expect(warnings.length).toBe(0);
+        expect(output.errored).toBe(false);
+        expect(/deprecated/g.test(output.output)).toBe(false);
+      });
+  });
 });
 
 describe("invalid cases", () => {

@@ -4,6 +4,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "utils",
     "CHANGELOG.md",
     "README.md"
   ],
@@ -29,7 +30,7 @@
     "npmpub": "^5.0.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "stylelint": "^13.2.1",
+    "stylelint": "^13.13.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-react-native": "^2.2.0"
   },
@@ -59,5 +60,8 @@
     "extends": [
       "plugin:jest/recommended"
     ]
+  },
+  "dependencies": {
+    "compare-versions": "^3.6.0"
   }
 }
