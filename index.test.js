@@ -23,7 +23,7 @@ describe("valid cases", () => {
     return stylelint
       .lint({
         code,
-        syntax: "css-in-js",
+        customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
           extends: "./index.js"
@@ -83,7 +83,7 @@ describe("valid cases", () => {
     return stylelint
       .lint({
         code,
-        syntax: "css-in-js",
+        customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
           extends: "./index.js"
@@ -113,7 +113,7 @@ describe("valid cases", () => {
     return stylelint
       .lint({
         code,
-        syntax: "css-in-js",
+        customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
           extends: "./index.js"
@@ -141,7 +141,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -168,7 +168,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -195,7 +195,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -222,7 +222,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -251,7 +251,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -278,7 +278,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -305,7 +305,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -332,7 +332,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -359,7 +359,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -386,7 +386,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -413,7 +413,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -440,7 +440,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -467,7 +467,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -494,7 +494,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -521,7 +521,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -548,7 +548,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -575,7 +575,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -602,7 +602,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -629,7 +629,7 @@ describe("valid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -657,7 +657,7 @@ describe("valid cases", () => {
     return stylelint
       .lint({
         code,
-        syntax: "css-in-js",
+        customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
           extends: "./index.js"
@@ -707,7 +707,7 @@ describe("invalid cases", () => {
     return stylelint
       .lint({
         code,
-        syntax: "css-in-js",
+        customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
           extends: "./index.js"
@@ -765,7 +765,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -798,7 +798,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -831,7 +831,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           processors: ["stylelint-processor-styled-components"],
           config: {
@@ -863,7 +863,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -895,7 +895,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -959,7 +959,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -991,7 +991,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1023,7 +1023,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1055,7 +1055,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1087,7 +1087,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1117,7 +1117,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1148,7 +1148,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1178,7 +1178,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1208,7 +1208,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1238,7 +1238,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1270,7 +1270,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1300,7 +1300,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1330,7 +1330,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1360,7 +1360,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1390,7 +1390,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1420,7 +1420,7 @@ describe("invalid cases", () => {
         return stylelint
           .lint({
             code,
-            syntax: "css-in-js",
+            customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
               extends: "./index.js"
@@ -1460,7 +1460,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1558,7 +1558,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1588,7 +1588,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
@@ -1620,7 +1620,7 @@ describe("invalid cases", () => {
       return stylelint
         .lint({
           code,
-          syntax: "css-in-js",
+          customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
             extends: "./index.js"
