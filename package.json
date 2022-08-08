@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@stylelint/postcss-css-in-js": "^0.37.2",
-    "eslint": "^6.8.0",
+    "eslint": "^8.21.0",
     "eslint-plugin-jest": "^23.8.2",
     "husky": "^4.2.3",
     "jest": "^28.1.3",
