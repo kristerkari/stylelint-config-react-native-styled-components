@@ -20,7 +20,8 @@
   "scripts": {
     "lint": "eslint .",
     "release": "npmpub",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@stylelint/postcss-css-in-js": "^0.38.0",
