@@ -5,11 +5,11 @@ describe("migrateRuleNames", () => {
     expect(
       migrateRuleNames({
         "property-blacklist": true,
-        "selector-combinator-blacklist": false
+        "selector-combinator-blacklist": false,
       })
     ).toEqual({
       "property-disallowed-list": true,
-      "selector-combinator-disallowed-list": false
+      "selector-combinator-disallowed-list": false,
     });
   });
 
@@ -17,21 +17,21 @@ describe("migrateRuleNames", () => {
     expect(
       migrateRuleNames({
         "property-whitelist": true,
-        "selector-combinator-whitelist": false
+        "selector-combinator-whitelist": false,
       })
     ).toEqual({
       "property-allowed-list": true,
-      "selector-combinator-allowed-list": false
+      "selector-combinator-allowed-list": false,
     });
   });
 
   it("should migrate deprecated *-requirelist to *-required-list", () => {
     expect(
       migrateRuleNames({
-        "at-rule-property-requirelist": true
+        "at-rule-property-requirelist": true,
       })
     ).toEqual({
-      "at-rule-property-required-list": true
+      "at-rule-property-required-list": true,
     });
   });
 
@@ -40,12 +40,12 @@ describe("migrateRuleNames", () => {
       migrateRuleNames({
         "selector-combinator-blacklist": false,
         "at-rule-property-requirelist": true,
-        "property-whitelist": true
+        "property-whitelist": true,
       })
     ).toEqual({
       "selector-combinator-disallowed-list": false,
       "at-rule-property-required-list": true,
-      "property-allowed-list": true
+      "property-allowed-list": true,
     });
   });
 });

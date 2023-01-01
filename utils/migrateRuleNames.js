@@ -1,7 +1,7 @@
 const replacementPairs = [
   [/-blacklist$/, "-disallowed-list"],
   [/-whitelist$/, "-allowed-list"],
-  [/-requirelist$/, "-required-list"]
+  [/-requirelist$/, "-required-list"],
 ];
 
 function migrate(key) {
