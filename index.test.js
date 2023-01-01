@@ -26,10 +26,10 @@ describe("valid cases", () => {
         customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(0);
         expect(output.errored).toBe(false);
@@ -58,10 +58,10 @@ describe("valid cases", () => {
         code,
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(0);
         expect(output.errored).toBe(false);
@@ -86,10 +86,10 @@ describe("valid cases", () => {
         customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(0);
         expect(output.errored).toBe(false);
@@ -105,7 +105,7 @@ describe("valid cases", () => {
     const Test = styled.Image\`
       width: 20;
       height: 20;
-      ${props =>
+      ${(props) =>
         props.tintColor ? `tintColor: ${props.tintColor}` : undefined};
     \`;
     `;
@@ -116,10 +116,10 @@ describe("valid cases", () => {
         customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(0);
         expect(output.errored).toBe(false);
@@ -144,10 +144,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -171,10 +171,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -198,10 +198,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -225,10 +225,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -254,10 +254,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -281,10 +281,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -308,10 +308,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -335,10 +335,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -362,10 +362,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -389,10 +389,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -416,10 +416,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -443,10 +443,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -470,10 +470,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -497,10 +497,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -524,10 +524,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -551,10 +551,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -578,10 +578,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -605,10 +605,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -632,10 +632,10 @@ describe("valid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -660,10 +660,10 @@ describe("valid cases", () => {
         customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(0);
         expect(output.errored).toBe(false);
@@ -710,10 +710,10 @@ describe("invalid cases", () => {
         customSyntax: "@stylelint/postcss-css-in-js",
         formatter: "string",
         config: {
-          extends: "./index.js"
-        }
+          extends: "./index.js",
+        },
       })
-      .then(output => {
+      .then((output) => {
         const { warnings } = output.results[0];
         expect(warnings.length).toBe(1);
         expect(output.errored).toBe(true);
@@ -738,10 +738,10 @@ describe("invalid cases", () => {
           code,
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -768,10 +768,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
@@ -801,10 +801,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -835,10 +835,10 @@ describe("invalid cases", () => {
           formatter: "string",
           processors: ["stylelint-processor-styled-components"],
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(0);
           expect(output.errored).toBe(false);
@@ -866,10 +866,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -898,10 +898,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -927,10 +927,10 @@ describe("invalid cases", () => {
           code,
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
@@ -962,10 +962,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -994,10 +994,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1026,10 +1026,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1058,10 +1058,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1090,10 +1090,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1120,10 +1120,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1151,10 +1151,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1181,10 +1181,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1211,10 +1211,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1241,10 +1241,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1273,10 +1273,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1303,10 +1303,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1333,10 +1333,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1363,10 +1363,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1393,10 +1393,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1423,10 +1423,10 @@ describe("invalid cases", () => {
             customSyntax: "@stylelint/postcss-css-in-js",
             formatter: "string",
             config: {
-              extends: "./index.js"
-            }
+              extends: "./index.js",
+            },
           })
-          .then(output => {
+          .then((output) => {
             const { warnings } = output.results[0];
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
@@ -1463,10 +1463,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1494,10 +1494,10 @@ describe("invalid cases", () => {
           code,
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
@@ -1528,10 +1528,10 @@ describe("invalid cases", () => {
           code,
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
@@ -1561,10 +1561,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1591,10 +1591,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
@@ -1623,10 +1623,10 @@ describe("invalid cases", () => {
           customSyntax: "@stylelint/postcss-css-in-js",
           formatter: "string",
           config: {
-            extends: "./index.js"
-          }
+            extends: "./index.js",
+          },
         })
-        .then(output => {
+        .then((output) => {
           const { warnings } = output.results[0];
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
