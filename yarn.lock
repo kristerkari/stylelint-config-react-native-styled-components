@@ -3560,10 +3560,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-native-known-styling-properties@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.1.0.tgz#04e961be62bfff64753b7fbbfb5d50af2f0e4421"
-  integrity sha512-VYR9Sy0VV/v43OzkojCDRQ85HIfwM+hJ8x9avdEMRZ5s68Lmfsy+U4u85LNOYbrMKZ1zpZd4Zvk+vB0IW4LRmA==
+react-native-known-styling-properties@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-known-styling-properties/-/react-native-known-styling-properties-1.2.0.tgz#5370f87af605c6c516178bac4eb1493cdf160f36"
+  integrity sha512-nrsxo8t1FjMJILe9hoRC1WtfXw7gBs/Cq7Gcts8soDDhN0RjoFu9bJtphJGYC2fs9B2ANYOdEoP4B4tiinkwgw==
 
 read-pkg-up@^7.0.1:
   version "7.0.1"
@@ -3945,12 +3945,12 @@ stylelint-processor-styled-components@^1.10.0:
     micromatch "^4.0.2"
     postcss "^7.0.26"
 
-stylelint-react-native@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/stylelint-react-native/-/stylelint-react-native-2.4.0.tgz#9044806f43c2aea10fba77b19e0a85d3a56103ea"
-  integrity sha512-7Wuls86IKoP8iymVyMP6t6LhjFc9H3n+0FRhD1fffPTCMz5gvcIWS4ehgzRHQE3uDXO2yzpnmbfgVXOp6Mka/w==
+stylelint-react-native@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/stylelint-react-native/-/stylelint-react-native-2.5.0.tgz#c9c5ab6d18dccf06700c4d742a6aba3eaec72b28"
+  integrity sha512-1o7uUd3HKtjfvi2lRhP1hwKJHXRdLT6LAgpG8WnNyNBmuP2K61OWKIimXapVtW/bWmcXakSiANDHtfO9xrXbWg==
   dependencies:
-    react-native-known-styling-properties "^1.1.0"
+    react-native-known-styling-properties "^1.2.0"
 
 stylelint@^14.16.1:
   version "14.16.1"
