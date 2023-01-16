@@ -32,7 +32,7 @@
     "npmpub": "^5.1.1",
     "postcss": "^8.4.21",
     "postcss-syntax": "^0.36.2",
-    "prettier": "^2.8.2",
+    "prettier": "^2.8.3",
     "pretty-quick": "^3.1.3",
     "stylelint": "^14.16.1",
     "stylelint-processor-styled-components": "^1.10.0",
