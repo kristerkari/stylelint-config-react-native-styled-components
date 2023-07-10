@@ -66,6 +66,6 @@
     ]
   },
   "dependencies": {
-    "compare-versions": "^5.0.3"
+    "compare-versions": "^6.0.0"
   }
 }
