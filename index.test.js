@@ -718,7 +718,7 @@ describe("invalid cases", () => {
         expect(warnings.length).toBe(1);
         expect(output.errored).toBe(true);
         expect(warnings[0].text).toBe(
-          "pseudo class selectors are not supported when using styled-components with React Native."
+          "pseudo class selectors are not supported when using styled-components with React Native.",
         );
       });
   });
@@ -746,7 +746,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            'Unexpected vendor-prefix "-webkit-flex" (value-no-vendor-prefix)'
+            'Unexpected vendor-prefix "-webkit-flex" (value-no-vendor-prefix)',
           );
         });
     });
@@ -776,10 +776,10 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            'Unexpected unknown property "-webkit-transform" (react-native/css-property-no-unknown)'
+            'Unexpected unknown property "-webkit-transform" (react-native/css-property-no-unknown)',
           );
           expect(warnings[1].text).toBe(
-            'Unexpected vendor-prefix "-webkit-transform" (property-no-vendor-prefix)'
+            'Unexpected vendor-prefix "-webkit-transform" (property-no-vendor-prefix)',
           );
         });
     });
@@ -809,7 +809,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            'Unexpected unknown property "word-wrap" (react-native/css-property-no-unknown)'
+            'Unexpected unknown property "word-wrap" (react-native/css-property-no-unknown)',
           );
         });
     });
@@ -874,7 +874,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "id selectors are not supported when using styled-components with React Native."
+            "id selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -906,7 +906,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "type selectors are not supported when using styled-components with React Native."
+            "type selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -935,10 +935,10 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "class selectors are not supported when using styled-components with React Native."
+            "class selectors are not supported when using styled-components with React Native.",
           );
           expect(warnings[1].text).toBe(
-            "type selectors are not supported when using styled-components with React Native."
+            "type selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -970,7 +970,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "universal selectors are not supported when using styled-components with React Native."
+            "universal selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1002,7 +1002,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "attribute selectors are not supported when using styled-components with React Native."
+            "attribute selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1034,7 +1034,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "pseudo class selectors are not supported when using styled-components with React Native."
+            "pseudo class selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1066,7 +1066,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "pseudo class selectors are not supported when using styled-components with React Native."
+            "pseudo class selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1098,7 +1098,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this function is not supported when using styled-components with React Native."
+            "this function is not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1128,7 +1128,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this function is not supported when using styled-components with React Native."
+            "this function is not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1159,7 +1159,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1189,7 +1189,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1219,7 +1219,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1249,7 +1249,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1281,7 +1281,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1311,7 +1311,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1341,7 +1341,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1371,7 +1371,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1401,7 +1401,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1431,7 +1431,7 @@ describe("invalid cases", () => {
             expect(warnings.length).toBe(1);
             expect(output.errored).toBe(true);
             expect(warnings[0].text).toBe(
-              "this function is not supported when using styled-components with React Native."
+              "this function is not supported when using styled-components with React Native.",
             );
           });
       });
@@ -1471,7 +1471,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1502,10 +1502,10 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
           expect(warnings[1].text).toBe(
-            "class selectors are not supported when using styled-components with React Native."
+            "class selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1536,10 +1536,10 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(2);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
           expect(warnings[1].text).toBe(
-            "class selectors are not supported when using styled-components with React Native."
+            "class selectors are not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1569,7 +1569,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1599,7 +1599,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
         });
     });
@@ -1631,7 +1631,7 @@ describe("invalid cases", () => {
           expect(warnings.length).toBe(1);
           expect(output.errored).toBe(true);
           expect(warnings[0].text).toBe(
-            "this at-rule is not supported when using styled-components with React Native."
+            "this at-rule is not supported when using styled-components with React Native.",
           );
         });
     });

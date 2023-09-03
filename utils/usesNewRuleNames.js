@@ -6,7 +6,7 @@ function usesNewRuleNames() {
   return compareVersions.compare(
     stylelintVersion,
     stylelintVersionWithDepreactions,
-    ">="
+    ">=",
   );
 }
 

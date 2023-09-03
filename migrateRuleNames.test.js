@@ -6,7 +6,7 @@ describe("migrateRuleNames", () => {
       migrateRuleNames({
         "property-blacklist": true,
         "selector-combinator-blacklist": false,
-      })
+      }),
     ).toEqual({
       "property-disallowed-list": true,
       "selector-combinator-disallowed-list": false,
@@ -18,7 +18,7 @@ describe("migrateRuleNames", () => {
       migrateRuleNames({
         "property-whitelist": true,
         "selector-combinator-whitelist": false,
-      })
+      }),
     ).toEqual({
       "property-allowed-list": true,
       "selector-combinator-allowed-list": false,
@@ -29,7 +29,7 @@ describe("migrateRuleNames", () => {
     expect(
       migrateRuleNames({
         "at-rule-property-requirelist": true,
-      })
+      }),
     ).toEqual({
       "at-rule-property-required-list": true,
     });
@@ -41,7 +41,7 @@ describe("migrateRuleNames", () => {
         "selector-combinator-blacklist": false,
         "at-rule-property-requirelist": true,
         "property-whitelist": true,
-      })
+      }),
     ).toEqual({
       "selector-combinator-disallowed-list": false,
       "at-rule-property-required-list": true,
