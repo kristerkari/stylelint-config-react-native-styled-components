@@ -1,3 +1,7 @@
+## v0.6.1
+
+- Updated: README instructions for stylelint version 15.
+
 ## v0.6.0
 
 - Added: support for stylelint version 15.
