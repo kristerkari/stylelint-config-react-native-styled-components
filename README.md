@@ -10,7 +10,38 @@ Shareable stylelint config for [styled components](https://www.styled-components
 
 ## Installation and usage
 
-Install `stylelint-config-react-native-styled-components` (and `stylelint` + `stylelint-react-native`):
+Install `stylelint-config-react-native-styled-components` (and `stylelint` + `stylelint-react-native`).
+
+### For stylelint v15+ (recommended)
+
+```
+yarn add \
+  stylelint \
+  stylelint-react-native \
+  stylelint-config-react-native-styled-components \
+  postcss-styled-syntax --dev
+```
+
+or
+
+```
+npm install \
+  stylelint \
+  stylelint-react-native \
+  stylelint-config-react-native-styled-components \
+  postcss-styled-syntax --save-dev
+```
+
+Create the `.stylelintrc` config file (or open the existing one), extend `stylelint-config-react-native-styled-components` config, and defined the `customSyntax`.
+
+```json
+{
+  "extends": ["stylelint-config-react-native-styled-components"],
+  "customSyntax": "postcss-styled-syntax"
+}
+```
+
+### For stylelint v14 and below
 
 ```
 yarn add \
