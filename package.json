@@ -32,7 +32,7 @@
     "postcss": "^8.4.35",
     "postcss-styled-syntax": "^0.6.4",
     "postcss-syntax": "^0.36.2",
-    "prettier": "^3.0.3",
+    "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
     "stylelint": "^15.10.3",
     "stylelint-processor-styled-components": "^1.10.0",
