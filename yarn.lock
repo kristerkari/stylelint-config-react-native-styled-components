@@ -5074,10 +5074,10 @@ stylelint-processor-styled-components@^1.10.0:
     micromatch "^4.0.2"
     postcss "^7.0.26"
 
-stylelint-react-native@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/stylelint-react-native/-/stylelint-react-native-2.6.0.tgz#eb6ec0336e1a7189a79cdfc195ca42f0264840fb"
-  integrity sha512-8icxVIFC03pk4bvLjqFh6uUhWPu8e4OMFR2ake5NO1ow3GqveHJXuU1zVvcisyeEmyNaapZyMiYq4YduKnL17w==
+stylelint-react-native@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/stylelint-react-native/-/stylelint-react-native-2.7.0.tgz#de7c0da7f0242ca56f9a8a2efffbc6bc7a5e04cf"
+  integrity sha512-7x08DRkOJh7JrbwiASXNqP/rNaBZl4J3gDQY4JiM8YPlkGWwpPxpefWGFYuZD1DiYHtw6n3w4K0QreL5sVGbYQ==
   dependencies:
     react-native-known-styling-properties "^1.2.0"
 
