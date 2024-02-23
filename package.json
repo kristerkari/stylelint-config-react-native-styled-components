@@ -20,10 +20,11 @@
   "scripts": {
     "lint": "eslint .",
     "release": "np",
-    "test": "jest",
+    "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "eslint-plugin-jest": "^27.9.0",
     "husky": "^9.0.11",
@@ -34,13 +35,13 @@
     "postcss-syntax": "^0.36.2",
     "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
-    "stylelint": "^15.10.3",
+    "stylelint": "^16.2.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-react-native": "^2.7.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "stylelint": "^9.5.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
+    "stylelint": "^9.5.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0",
     "stylelint-react-native": "^2.0.0"
   },
   "husky": {
