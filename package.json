@@ -38,7 +38,7 @@
     "stylelint": "^16.6.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-react-native": "^2.7.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "peerDependencies": {
     "stylelint": "^9.5.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0",
