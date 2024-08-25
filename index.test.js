@@ -399,6 +399,33 @@ describe("valid cases", () => {
         });
     });
 
+    it("does not warn for translateY function with percentage", () => {
+      expect.assertions(2);
+
+      const code = `
+      import styled from "styled-components";
+
+      const Test = styled.View\`
+        transform: translateY(100%);
+      \`;
+      `;
+
+      return stylelint
+        .lint({
+          code,
+          customSyntax: "postcss-styled-syntax",
+          formatter: "string",
+          config: {
+            extends: "./index.js",
+          },
+        })
+        .then((output) => {
+          const { warnings } = output.results[0];
+          expect(warnings.length).toBe(0);
+          expect(output.errored).toBe(false);
+        });
+    });
+
     it("does not warn for translateX function", () => {
       expect.assertions(2);
 
