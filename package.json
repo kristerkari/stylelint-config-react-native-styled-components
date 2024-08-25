@@ -35,7 +35,7 @@
     "postcss-syntax": "^0.36.2",
     "prettier": "^3.3.3",
     "pretty-quick": "^4.0.0",
-    "stylelint": "^16.6.1",
+    "stylelint": "^16.8.2",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-react-native": "^2.7.0",
     "typescript": "^5.5.3"
